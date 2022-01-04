@@ -1,0 +1,13 @@
+@use "../assets/styles/_colors.scss" as *;
+
+.app-container {
+  padding: 20px;
+
+  header {
+    .name {
+      color: $primary-light;
+      font-size: 1.1rem;
+      // font-family: "Montserrat";
+    }
+  }
+}

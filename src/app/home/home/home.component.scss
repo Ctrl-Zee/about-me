@@ -1,0 +1,138 @@
+@use "../../../assets/styles/_colors.scss" as *;
+
+.home-container {
+  height: 100vh;
+  color: $primary-light;
+  display: flex;
+  flex-flow: column nowrap;
+
+  #scene {
+    width: 100%;
+    height: 100%;
+    border: 2px solid red;
+    position: relative;
+    .planet {
+      width: 50%;
+      max-width: 255px;
+      position: absolute !important;
+      left: 25% !important;
+      top: 25% !important;
+      bottom: auto !important;
+      right: auto !important;
+    }
+    .moon {
+      width: 25%;
+      max-width: 164px;
+      position: absolute !important;
+      right: 12% !important;
+      top: 24% !important;
+      bottom: auto !important;
+      left: auto !important;
+    }
+    .big-star-1 {
+      position: absolute !important;
+      right: 3% !important;
+      top: 6% !important;
+      bottom: auto !important;
+      right: auto !important;
+    }
+    .big-star-2 {
+      position: absolute !important;
+      left: 28% !important;
+      bottom: 6% !important;
+      top: auto !important;
+      right: auto !important;
+    }
+    .big-star-3 {
+      position: absolute !important;
+      left: 10% !important;
+      top: 15% !important;
+      bottom: auto !important;
+      right: auto !important;
+    }
+    .small-star-1 {
+      position: absolute !important;
+      right: 14% !important;
+      top: 60% !important;
+      bottom: auto !important;
+      left: auto !important;
+    }
+    .small-star-2 {
+      position: absolute !important;
+      left: 8% !important;
+      bottom: 25% !important;
+      top: auto !important;
+      right: auto !important;
+    }
+    .small-star-3 {
+      position: absolute !important;
+      left: 31% !important;
+      top: 4% !important;
+    }
+    .extra-small-star-1 {
+      position: absolute !important;
+      right: 9% !important;
+      bottom: 7% !important;
+      top: auto !important;
+      left: auto !important;
+    }
+    .extra-small-star-2 {
+      position: absolute !important;
+      left: 21% !important;
+      bottom: 62% !important;
+      top: auto !important;
+      right: auto !important;
+    }
+    .extra-small-star-3 {
+      position: absolute !important;
+      left: 56% !important;
+      top: 12% !important;
+      bottom: auto !important;
+      right: auto !important;
+    }
+    .extra-small-star-4 {
+      position: absolute !important;
+      left: 47% !important;
+      top: 71% !important;
+      bottom: auto !important;
+      right: auto !important;
+    }
+  }
+
+  .image-text {
+    height: 60%;
+    display: flex;
+    align-items: center;
+    color: $colorful-1;
+    font-weight: bold;
+  }
+
+  .title {
+    height: 40%;
+    display: flex;
+    flex-flow: column;
+
+    .divider {
+      height: 2px;
+      width: 44px;
+      background-color: $colorful-1;
+
+      &.top {
+        margin: 18px 0 12px 0;
+      }
+
+      &.bottom {
+        margin: 0 0 18px 30px;
+      }
+    }
+
+    .title-name {
+      text-transform: uppercase;
+      font-size: 1.8rem;
+    }
+
+    .title-lead {
+      font-size: 0.8rem;
+    }
+  }
+}
