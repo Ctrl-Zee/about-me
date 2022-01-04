@@ -1,13 +1,21 @@
 @use "../assets/styles/_colors.scss" as *;
 
 .app-container {
-  padding: 20px;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(13, 13, 13);
+  background: linear-gradient(
+    0deg,
+    rgba(13, 13, 13, 1) 0%,
+    rgba(22, 10, 64, 1) 90%
+  );
+  // padding: 20px;
+  position: fixed;
 
   header {
     .name {
       color: $primary-light;
       font-size: 1.1rem;
-      // font-family: "Montserrat";
     }
   }
 }
