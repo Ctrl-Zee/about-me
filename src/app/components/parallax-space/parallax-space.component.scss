@@ -1,28 +1,40 @@
-@use "../../../assets/styles/_colors.scss" as *;
+@import "../../../assets/styles/_colors.scss";
+@import "../../../assets/styles/_animations.scss";
+@import "../../../assets/styles/_variables.scss";
 
 #scene {
   width: 100%;
   height: 100%;
   position: relative;
-  .image-text {
-    color: $bright-1;
-    font-size: 1.8rem;
-    font-weight: bold;
+  animation: slide-in-right 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  @media #{$desktop-screen} {
+    top: 30%;
+    left: 16%;
+  }
+  .ring {
+    width: 100%;
     position: absolute !important;
-    left: 5% !important;
-    top: 47% !important;
-    bottom: auto !important;
-    right: auto !important;
-    z-index: 2;
+    top: 0 !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    margin: auto;
+
+    @media #{$desktop-screen} {
+      width: 90%;
+    }
   }
   .planet {
-    width: 60%;
-    max-width: 355px;
+    width: calc(100vw / 2);
     position: absolute !important;
-    left: 25% !important;
-    top: 25% !important;
-    bottom: auto !important;
-    right: auto !important;
+    top: 0 !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    margin: auto;
+    @media #{$desktop-screen} {
+      width: calc(100vw / 3);
+    }
   }
   .moon {
     width: 25%;
@@ -32,6 +44,10 @@
     top: 24% !important;
     bottom: auto !important;
     left: auto !important;
+    @media #{$desktop-screen} {
+      right: 21% !important;
+      top: 13% !important;
+    }
   }
   .big-star-1 {
     position: absolute !important;
@@ -100,5 +116,16 @@
     top: 84% !important;
     bottom: auto !important;
     right: auto !important;
+  }
+  .image-text {
+    color: $bright-1;
+    font-size: 1.8rem;
+    font-weight: bold;
+    position: absolute !important;
+    left: 5% !important;
+    top: 47% !important;
+    bottom: auto !important;
+    right: auto !important;
+    z-index: 2;
   }
 }
