@@ -7,22 +7,39 @@
   color: $primary-light;
   display: flex;
   flex-flow: column nowrap;
+  position: relative;
 
   .parallax-container {
     width: 100%;
     height: 65%;
+
+    @media #{$desktop-screen} {
+      height: 100vh;
+      width: 100vh;
+      position: fixed;
+      left: 30%;
+      top: 0;
+    }
   }
 
   .title {
-    height: 40%;
     display: flex;
-    flex-flow: column;
-    margin-left: 30px;
+    flex-flow: column nowrap;
+    margin-left: 40px;
+    @media #{$desktop-screen} {
+      position: absolute;
+      top: 36%;
+      left: 60px;
+    }
 
     .divider {
-      height: 2px;
       width: 44px;
-      background-color: $bright-1;
+      height: 2px;
+      background-color: $complimentary;
+      @media #{$desktop-screen} {
+        width: 88px;
+        height: 3px;
+      }
 
       &.top {
         margin: 18px 0 12px 0;
@@ -31,6 +48,9 @@
 
       &.bottom {
         margin: 0 0 18px 30px;
+        @media #{$desktop-screen} {
+          margin-left: 45px;
+        }
         animation: slide-in-left 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.05s
           both;
       }
@@ -39,13 +59,22 @@
     .title-name {
       text-transform: uppercase;
       font-size: 2rem;
+      letter-spacing: 0.2rem;
       animation: slide-in-left 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+      @media #{$desktop-screen} {
+        font-size: 5.6rem;
+        letter-spacing: 0.4rem;
+      }
     }
 
     .title-lead {
       font-size: 0.8rem;
+      letter-spacing: 0.1rem;
       animation: slide-in-left 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.1s
         both;
+      @media #{$desktop-screen} {
+        font-size: 1.6rem;
+      }
     }
   }
 }

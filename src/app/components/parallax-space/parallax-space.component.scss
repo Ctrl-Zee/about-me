@@ -7,31 +7,31 @@
   height: 100%;
   position: relative;
   animation: slide-in-right 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  @media #{$desktop-screen} {
-    top: 30%;
-    left: 16%;
-  }
+
   .ring {
-    width: 100%;
+    width: 200%;
     position: absolute !important;
     top: 0 !important;
-    left: 0 !important;
+    left: -50% !important;
     bottom: 0 !important;
     right: 0 !important;
     margin: auto;
 
     @media #{$desktop-screen} {
       width: 90%;
+      left: 0 !important;
     }
   }
   .planet {
     width: calc(100vw / 2);
+    max-width: 480px;
     position: absolute !important;
     top: 0 !important;
     left: 0 !important;
     bottom: 0 !important;
     right: 0 !important;
     margin: auto;
+    z-index: 2;
     @media #{$desktop-screen} {
       width: calc(100vw / 3);
     }
@@ -44,9 +44,10 @@
     top: 24% !important;
     bottom: auto !important;
     left: auto !important;
+    z-index: 3;
     @media #{$desktop-screen} {
-      right: 21% !important;
-      top: 13% !important;
+      right: 26% !important;
+      top: 22% !important;
     }
   }
   .big-star-1 {
@@ -70,6 +71,20 @@
     bottom: auto !important;
     right: auto !important;
   }
+  .big-star-4 {
+    position: absolute !important;
+    left: auto !important;
+    top: auto !important;
+    bottom: 15% !important;
+    right: 15% !important;
+  }
+  .big-star-5 {
+    position: absolute !important;
+    left: 15% !important;
+    top: 51% !important;
+    bottom: auto !important;
+    right: auto !important;
+  }
   .small-star-1 {
     position: absolute !important;
     right: 7% !important;
@@ -88,6 +103,30 @@
     position: absolute !important;
     left: 31% !important;
     top: 4% !important;
+  }
+  .small-star-4 {
+    position: absolute !important;
+    right: 27% !important;
+    top: 9% !important;
+    left: auto !important;
+  }
+  .small-star-5 {
+    position: absolute !important;
+    left: 34% !important;
+    top: auto !important;
+    bottom: 30% !important;
+  }
+  .small-star-6 {
+    position: absolute !important;
+    left: auto !important;
+    right: 16% !important;
+    top: 36% !important;
+  }
+  .small-star-7 {
+    position: absolute !important;
+    left: auto !important;
+    right: 55%;
+    top: 22% !important;
   }
   .extra-small-star-1 {
     position: absolute !important;
@@ -117,15 +156,109 @@
     bottom: auto !important;
     right: auto !important;
   }
+  .extra-small-star-5 {
+    position: absolute !important;
+    left: 58% !important;
+    top: auto !important;
+    bottom: 29% !important;
+    right: auto !important;
+  }
+  .extra-small-star-6 {
+    position: absolute !important;
+    left: 25% !important;
+    top: 80% !important;
+    bottom: auto !important;
+    right: auto !important;
+  }
+  .extra-small-star-7 {
+    position: absolute !important;
+    left: auto !important;
+    top: 17% !important;
+    bottom: auto !important;
+    right: 6% !important;
+  }
+  .extra-small-star-8 {
+    left: auto !important;
+    top: 48% !important;
+    bottom: auto !important;
+    right: 17% !important;
+  }
+  .extra-small-star-9 {
+    position: absolute !important;
+    left: 3% !important;
+    top: 58% !important;
+    bottom: auto !important;
+    right: auto !important;
+  }
+  .extra-small-star-10 {
+    position: absolute !important;
+    left: 11% !important;
+    top: 3% !important;
+    bottom: auto !important;
+    right: auto !important;
+  }
+  .extra-small-star-11 {
+    position: absolute !important;
+    left: 38% !important;
+    top: 16% !important;
+    bottom: auto !important;
+    right: auto !important;
+  }
+  .extra-small-star-12 {
+    position: absolute !important;
+    left: 29% !important;
+    top: 43% !important;
+    bottom: auto !important;
+    right: auto !important;
+  }
+  .extra-small-star-13 {
+    position: absolute !important;
+    left: auto !important;
+    top: 21% !important;
+    bottom: auto !important;
+    right: 25% !important;
+  }
+  .extra-small-star-14 {
+    position: absolute !important;
+    left: auto !important;
+    top: 61% !important;
+    bottom: auto !important;
+    right: 23% !important;
+  }
+  .extra-small-star-15 {
+    position: absolute !important;
+    left: auto !important;
+    top: auto !important;
+    bottom: 20% !important;
+    right: 29% !important;
+  }
+  .extra-small-star-16 {
+    position: absolute !important;
+    left: 25% !important;
+    top: auto !important;
+    bottom: 33% !important;
+    right: auto !important;
+  }
+  .extra-small-star-17 {
+    position: absolute !important;
+    left: 24% !important;
+    top: 19% !important;
+    bottom: auto !important;
+    right: auto !important;
+  }
   .image-text {
-    color: $bright-1;
+    color: $complimentary;
     font-size: 1.8rem;
     font-weight: bold;
     position: absolute !important;
     left: 5% !important;
-    top: 47% !important;
+    top: 46% !important;
     bottom: auto !important;
     right: auto !important;
     z-index: 2;
+    @media #{$desktop-screen} {
+      font-size: 3.5rem;
+      left: 31% !important;
+    }
   }
 }

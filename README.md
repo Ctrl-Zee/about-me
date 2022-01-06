@@ -1,6 +1,6 @@
 # AboutMe
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.1.
+Built on the backs of giants, this project was influenced by work done by [Kuon Yagi](https://kuon.space).
 
 ## Development server
 
