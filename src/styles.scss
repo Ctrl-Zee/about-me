@@ -14,15 +14,13 @@ html,
 body {
   height: 100%;
   width: 100%;
-  scrollbar-width: thin !important; /* Firefox */
 }
 body {
   font-family: "Dosis", "Montserrat", sans-serif;
-
   -ms-overflow-style: none !important; /* IE and Edge */
 }
 ::-webkit-scrollbar {
-  display: none;
+  display: none; /* chrome */
 }
 html,
 body,
