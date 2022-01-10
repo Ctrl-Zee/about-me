@@ -1,0 +1,9 @@
+@import "../../../assets/styles/_colors.scss";
+@import "../../../assets/styles/_animations.scss";
+@import "../../../assets/styles/_variables.scss";
+
+.about-container {
+  height: 100vh;
+  color: $primary-light;
+  background-color: #0d0d0d; //TODO make this a variable
+}

@@ -5,14 +5,15 @@
 .app-container {
   width: 100vw;
   height: 100vh;
+  overflow-x: hidden;
   background: rgb(13, 13, 13);
   background: linear-gradient(
     0deg,
     rgba(13, 13, 13, 1) 0%,
     rgba(22, 10, 64, 1) 35%
   );
-  position: fixed;
-
+  position: absolute;
+  scrollbar-width: none /* Firefox */;
   // header {
   //   .name {
   //     color: $primary-light;
