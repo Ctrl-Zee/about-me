@@ -5,11 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { ParallaxSpaceComponent } from './components/parallax-space/parallax-space.component';
+import { ResizeService } from './services/resize.service';
 
 @NgModule({
   declarations: [AppComponent, HomeComponent, ParallaxSpaceComponent],
   imports: [BrowserModule, AppRoutingModule],
-  providers: [],
+  providers: [ResizeService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
