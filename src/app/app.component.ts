@@ -7,7 +7,7 @@ import { ResizeService } from './services/resize.service';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'about-me';
+  title = 'Andrew Smith';
 
   constructor(private resizeService: ResizeService) {}
 

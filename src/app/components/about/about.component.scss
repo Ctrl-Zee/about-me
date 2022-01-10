@@ -3,7 +3,70 @@
 @import "../../../assets/styles/_variables.scss";
 
 .about-container {
-  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
   color: $primary-light;
-  background-color: #0d0d0d; //TODO make this a variable
+  background-color: #160a40; //TODO make this a variable
+
+  .introduction {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    background-color: $shade-1;
+    color: $primary-light;
+    padding: 1.5rem 1.5rem 8rem 1.5rem;
+
+    .title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-align: center;
+      padding: 1.5rem;
+    }
+    .bio {
+      text-align: center;
+    }
+  }
+
+  .skills-container {
+    width: 90%;
+    display: flex;
+    flex-flow: column wrap; // TODO: change to row for tablet/desktop
+    position: relative;
+    top: -6rem;
+    border-radius: 12px;
+    background-color: $primary-light;
+    color: $primary-dark;
+
+    .skills-section {
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      padding: 1.5rem;
+      border: 1px solid #d3d3d3;
+      border-radius: 12px;
+      .icon {
+        width: 48px;
+        padding: 1.5rem 0;
+      }
+      .description {
+        text-align: center;
+        margin-bottom: 1.5rem;
+      }
+      .skill-title {
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+      }
+      .skills-lead {
+        color: $shade-1;
+        font-size: 1.1rem;
+        margin-bottom: 0.6rem;
+      }
+      .skills {
+        text-align: center;
+      }
+    }
+  }
 }

@@ -11,14 +11,12 @@ export class HomeComponent implements AfterContentInit, OnDestroy {
   appWidth = 0;
   widthSubscription$ = this.resizeService.appWidth$.subscribe((width) => {
     this.appWidth = width;
-    console.log(this.appWidth);
   });
 
   constructor(private resizeService: ResizeService) {}
 
   ngAfterContentInit() {
     const scene = document.getElementById('scene');
-    console.log(this.appWidth > 500 ? true : false);
     const parallaxInstance = new Parallax(scene, {
       relativeInput: true,
       hoverOnly: this.appWidth > 500 ? true : false,
