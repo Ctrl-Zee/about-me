@@ -8,36 +8,55 @@
   flex-flow: column wrap;
   align-items: center;
   color: $primary-light;
-  background-color: $shade-2; //TODO make this a variable
+  background-color: $shade-2;
 
   .introduction {
     width: 100%;
     display: flex;
     flex-flow: column wrap;
+    align-items: center;
     background-color: $shade-1;
     color: $primary-light;
     padding: 1.5rem 1.5rem 8rem 1.5rem;
+    @media #{$desktop-screen} {
+      height: 600px;
+      justify-content: center;
+    }
 
     .title {
       font-size: 1.5rem;
       font-weight: bold;
       text-align: center;
       padding: 1.5rem;
+      @media #{$desktop-screen} {
+        max-width: 1200px;
+        font-size: 2.5rem;
+      }
     }
     .bio {
       text-align: center;
+      @media #{$desktop-screen} {
+        width: 60%;
+        max-width: 1200px;
+        font-size: 1.3rem;
+      }
     }
   }
 
   .skills-container {
     width: 90%;
     display: flex;
-    flex-flow: column wrap; // TODO: change to row for tablet/desktop
+    flex-flow: column wrap;
     position: relative;
     top: -6rem;
     border-radius: 12px;
     background-color: $primary-light;
     color: $primary-dark;
+    @media #{$desktop-screen} {
+      max-width: 1200px;
+      flex-flow: row wrap;
+      font-size: 1.3rem;
+    }
 
     .skills-section {
       display: flex;
@@ -47,14 +66,26 @@
       &:not(:last-child) {
         border-bottom: 1px solid #d3d3d3;
       }
-      // border-radius: 12px;
+      @media #{$desktop-screen} {
+        width: 33%;
+        height: 100%;
+        &:not(:last-child) {
+          border-bottom: none;
+        }
+      }
       .icon {
-        width: 48px;
+        height: 100px;
         padding: 1.5rem 0;
+        img {
+          width: 48px;
+        }
       }
       .description {
         text-align: center;
         margin-bottom: 1.5rem;
+        @media #{$desktop-screen} {
+          height: 160px;
+        }
       }
       .skill-title {
         font-size: 1.3rem;
@@ -64,13 +95,20 @@
       .skills-lead {
         color: $shade-1;
         font-size: 1.1rem;
+        font-weight: bold;
         margin-bottom: 0.6rem;
+        @media #{$desktop-screen} {
+          font-size: 1.3rem;
+        }
       }
       .skills {
         text-align: center;
         margin-bottom: 1.5rem;
         ul {
           list-style: none;
+        }
+        @media #{$desktop-screen} {
+          height: 260px;
         }
       }
     }
