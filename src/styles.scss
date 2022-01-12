@@ -1,4 +1,5 @@
 @import "./assets/styles/_variables.scss";
+@import "./assets/styles/_colors.scss";
 // css resets
 html {
   box-sizing: border-box;
@@ -120,4 +121,15 @@ video {
 * {
   // font-family: "Dosis", "Montserrat", sans-serif;
   font-family: "Poppins", "Helvetica Neue", "Helvetica", sans-serif;
+}
+a {
+  color: $primary-light;
+  text-decoration: none;
+  letter-spacing: 0.2rem;
+  &:visited {
+    color: $primary-light;
+  }
+}
+ul {
+  list-style: none;
 }

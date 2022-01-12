@@ -8,6 +8,7 @@ import { ResizeService } from './services/resize.service';
 })
 export class AppComponent {
   title = 'Andrew Smith';
+  isMenuOpen = false;
 
   constructor(private resizeService: ResizeService) {}
 
@@ -18,5 +19,13 @@ export class AppComponent {
   @HostListener('window:resize', ['$event'])
   onWindowResize() {
     this.resizeService.onWidthChanged(window.innerWidth);
+  }
+
+  toggleMenu(): void {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  closeMenu(): void {
+    this.isMenuOpen = false;
   }
 }

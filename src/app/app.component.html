@@ -1,7 +1,7 @@
 <div class="app-container">
-  <!-- <header>
-    <span class="name">Andrew Smith</span>
-  </header> -->
+  <header>
+    <i class="pi pi-bars hamburger" (click)="toggleMenu()"></i>
+  </header>
   <app-home id="top"></app-home>
   <app-about id="about"></app-about>
   <div class="links">
@@ -48,4 +48,35 @@
       </svg>
     </a>
   </div>
+  <p-sidebar
+    [(visible)]="isMenuOpen"
+    [fullScreen]="true"
+    [baseZIndex]="10000"
+    [showCloseIcon]="true"
+  >
+    <div class="sidebar-container">
+      <header>
+        <i class="pi pi-times" (click)="closeMenu()"></i>
+      </header>
+      <div class="content">
+        <ul>
+          <li>
+            <a href="https://github.com/Ctrl-Zee" target="_blank">Github</a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/andrew-smith-aa763164/"
+              target="_blank"
+              >Linkedin</a
+            >
+          </li>
+          <li>
+            <a href="mailto:andrew.smith.indy@gmail.com" target="_blank"
+              >Email</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </p-sidebar>
 </div>
