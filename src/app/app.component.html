@@ -1,6 +1,15 @@
 <div class="app-container">
   <header>
-    <i class="pi pi-bars hamburger" (click)="toggleMenu()"></i>
+    <button
+      class="hamburger hamburger--spin"
+      type="button"
+      (click)="active = !active; toggleMenu()"
+      [ngClass]="active ? 'is-active' : ''"
+    >
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
   </header>
   <app-home id="top"></app-home>
   <app-about id="about"></app-about>
@@ -55,9 +64,6 @@
     [showCloseIcon]="true"
   >
     <div class="sidebar-container">
-      <header>
-        <i class="pi pi-times" (click)="closeMenu()"></i>
-      </header>
       <div class="content">
         <ul>
           <li>

@@ -11,7 +11,7 @@
 
   .parallax-container {
     width: 100%;
-    height: 65%;
+    height: calc(65% - 61px);
 
     @media #{$tablet-screen} {
       height: 100vh;

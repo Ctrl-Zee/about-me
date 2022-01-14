@@ -1,0 +1,8 @@
+//https://jonsuh.com/hamburgers/
+//https://github.com/jonsuh/hamburgers
+@import "./_colors.scss";
+
+$hamburger-layer-color: $primary-light;
+$hamburger-layer-width: 2rem;
+
+@import "../../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";

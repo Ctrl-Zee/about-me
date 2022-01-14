@@ -9,6 +9,7 @@ import { ResizeService } from './services/resize.service';
 export class AppComponent {
   title = 'Andrew Smith';
   isMenuOpen = false;
+  active = false;
 
   constructor(private resizeService: ResizeService) {}
 
@@ -23,9 +24,5 @@ export class AppComponent {
 
   toggleMenu(): void {
     this.isMenuOpen = !this.isMenuOpen;
-  }
-
-  closeMenu(): void {
-    this.isMenuOpen = false;
   }
 }
