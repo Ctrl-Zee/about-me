@@ -14,3 +14,9 @@
     );
   }
 }
+
+.hide-footer {
+}
+:host ::ng-deep p-sidebar.hide-footer .p-sidebar-footer {
+  display: none;
+}
