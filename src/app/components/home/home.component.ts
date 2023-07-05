@@ -1,11 +1,14 @@
 import { AfterContentInit, OnDestroy, Component } from '@angular/core';
 import Parallax from 'parallax-js';
 import { ResizeService } from 'src/app/services/resize.service';
+import { ParallaxSpaceComponent } from '../parallax-space/parallax-space.component';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss'],
+    selector: 'app-home',
+    templateUrl: './home.component.html',
+    styleUrls: ['./home.component.scss'],
+    standalone: true,
+    imports: [ParallaxSpaceComponent],
 })
 export class HomeComponent implements AfterContentInit, OnDestroy {
   appWidth = 0;

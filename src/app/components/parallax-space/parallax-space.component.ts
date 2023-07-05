@@ -2,9 +2,10 @@ import { AfterContentInit, Component } from '@angular/core';
 import Parallax from 'parallax-js';
 
 @Component({
-  selector: 'app-parallax-space',
-  templateUrl: './parallax-space.component.html',
-  styleUrls: ['./parallax-space.component.scss'],
+    selector: 'app-parallax-space',
+    templateUrl: './parallax-space.component.html',
+    styleUrls: ['./parallax-space.component.scss'],
+    standalone: true,
 })
 export class ParallaxSpaceComponent implements AfterContentInit {
   constructor() {}
